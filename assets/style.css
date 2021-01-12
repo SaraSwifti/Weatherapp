@@ -5,3 +5,8 @@
     color: #000;
 
 }
+.card-body {
+    float: left;
+    width: 30%;
+    margin: 0 auto;
+}
