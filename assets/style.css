@@ -1,12 +1,16 @@
 .jumbotron {
     align-items: center;
-    background-color: rgb(53, 53, 141);
+    background-color: rgb(94, 94, 160);
     text-align: center;
     color: #000;
 
 }
-.card-body {
-    float: left;
-    width: 30%;
-    margin: 0 auto;
-}
+.d-none {
+    display: none;
+    }
+
+    #fdf {
+        font-weight: bold;
+        font-size: 20px;
+
+    }
