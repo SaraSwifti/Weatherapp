@@ -8,10 +8,10 @@ apiKey = "50c71d66656725befd4b46281e12c1a4";
 
 //button event that will run these functions
 //$("#search-btn").on("click", function (event) {
-   // event.preventDefault();
-    var cityName = "Denver";
-    //$("#city-text").val().trim();
-    var queryURL = "https://api.openweathermap.org/data/2.5/forecast?q=" + cityName + "&appid=" + apiKey;
+// event.preventDefault();
+var cityName = "Denver";
+//$("#city-text").val().trim();
+var queryURL = "https://api.openweathermap.org/data/2.5/forecast?q=" + cityName + "&appid=" + apiKey;
 $.ajax({
     url: queryURL,
     method: "GET"
@@ -20,22 +20,32 @@ $.ajax({
     .then(function (response) {
         console.log(response);
         //variables for the JSON
-        //var cityNa = response.city.name;
-        //var todayDate = response.list[0].dt_txt; 
+        var cityNa = response.city.name;
+        var todayDate = response.list[0].dt_txt; 
         var todayTemp = response.list[0].main.temp;
-    console.log(todayTemp);
-    });
-// commented out for button function });
-       /* var todayWeatherIcon 
-        
-        var todayHum
-        var todayWind
-        var todayUv
-// now adding the elements and attributes for the values
- var todayHeader = $("<h1");
- todayDate.
+        //this is the icon call i belive, will need to work on that more
+        //var todayWeatherIcon = response.list[0].weather[0].icon;
 
-        
+        //var todayHum = response.list[0].main.humidity;
+        //var todayWind = response.list[0].wind.speed;
+
+
+        console.log();
+        // now adding the elements and attributes for the values
+        var todayHeaderRow = $("<h1>").text(cityNa + " " + " " + todayDate); 
+        var toTemp = $("<p>").text("Temp: " + todayTemp + "degrees");
+        $("#today-here").append(todayHeaderRow);
+        $("#today-here").append(toTemp);
+
+        console.log(toTemp);
+
+
+    });
+
+
+
+
+
 
         //call the functions for each box within this space passing the data from this function to the next
 
