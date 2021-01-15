@@ -9,8 +9,12 @@
     display: none;
     }
 
-    #fdf {
+    .h-font {
         font-weight: bold;
         font-size: 20px;
 
+    }
+    .btn {
+        background-color: rgb(149, 214, 149);
+        color: black;
     }
