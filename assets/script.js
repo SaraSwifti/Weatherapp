@@ -22,20 +22,32 @@ $.ajax({
         //variables for the JSON
         var cityNa = response.city.name;
         var todayDate = response.list[0].dt_txt; 
-        var todayTemp = response.list[0].main.temp;
+        var todayTemp = (response.list[0].main.temp-273.15);
+        todayTemp = parseFloat(todayTemp);
+        todayTemp = Math.round(todayTemp);
+
         //this is the icon call i belive, will need to work on that more
-        //var todayWeatherIcon = response.list[0].weather[0].icon;
+        var todayWeatherIcon = response.list[0].weather[0].icon;
 
-        //var todayHum = response.list[0].main.humidity;
-        //var todayWind = response.list[0].wind.speed;
-
-
+        var todayHum = response.list[0].main.humidity;
+        var todayWind = response.list[0].wind.speed;
         console.log();
+
         // now adding the elements and attributes for the values
-        var todayHeaderRow = $("<h1>").text(cityNa + " " + " " + todayDate); 
-        var toTemp = $("<p>").text("Temp: " + todayTemp + "degrees");
+        var todayIcon = $("<img>");
+        todayIcon.attr("src", todayWeatherIcon);
+        var todayHeaderRow = $("<h1>").text(cityNa + " " + " " + todayDate + todayIcon); 
+        var toTemp = $("<p>").text("Temp: " + todayTemp + " Degrees Celsius (because that it what the rest of the world uses:)");
+        var toHum = $("<p>").text("Humidity: " + todayHum + "%");
+        var toWind = $("<p>").text("Wind Speed: " + todayWind + "Kilometers/hour.");
+
+        
+        //putting the data in the correct boxes
         $("#today-here").append(todayHeaderRow);
-        $("#today-here").append(toTemp);
+        $("#today-here").append(toTemp, toHum, toWind);
+        //$("#today-here").append(toHum);
+        //$("#today-here").append(toWind);
+
 
         console.log(toTemp);
 
