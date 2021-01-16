@@ -18,6 +18,7 @@ $.ajax({
 })
     // have the response data create the elements in the city page
     .then(function (response) {
+        
         console.log(response);
         //variables for the JSON
         var cityNa = response.city.name;
@@ -45,13 +46,12 @@ $.ajax({
         //putting the data in the correct boxes
         $("#today-here").append(todayHeaderRow);
         $("#today-here").append(toTemp, toHum, toWind);
-        //$("#today-here").append(toHum);
-        //$("#today-here").append(toWind);
 
-
-        console.log(toTemp);
-
-
+        //making the city button to save all the data
+        var cityButton = $("<button>").text(cityNa);
+        cityButton.addClass("list-group-item");
+        $("#city-list").append(cityButton);
+    
     });
 
 
