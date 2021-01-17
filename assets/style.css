@@ -5,9 +5,7 @@
     color: #000;
 
 }
-.d-none {
-    display: none;
-    }
+
 
     .h-font {
         font-weight: bold;
@@ -17,4 +15,10 @@
     .btn {
         background-color: rgb(149, 214, 149);
         color: black;
+    }
+    #card {
+        position: relative;
+        float: left;
+        background-color: rgb(231, 218, 218);
+
     }
