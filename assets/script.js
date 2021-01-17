@@ -88,7 +88,7 @@ $("#search-btn").on("click", function (event) {
                 //thTemp.addClass("card-text");
                 // thHum.addClass("card-text");
                 $("#card").append(theDate, thTemp, thHum);
-                $("#fdf").append("#card");
+                //$("#fdf").append();
             }; 
           
         });
