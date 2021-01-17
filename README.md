@@ -1,3 +1,6 @@
+
+# Student Submission is at the bottom
+
 # Weatherapp
 Developers are often tasked with retrieving data from another application's API and using it in the context of their own. Third-party APIs allow developers to access their data and functionality by making requests with specific parameters to a URL. Your challenge is to build a weather dashboard that will run in the browser and feature dynamically updated HTML and CSS.
 
@@ -43,3 +46,13 @@ You are required to submit the following for review:
 
 - - -
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+## Student Submission for Review:
+The criteria met for this app are as follows: 
+input text bar with city search button is fired upon click to produce the weather for that day and the next 5 days per city entered. 
+Criteria not met: local stored data can not be retrived again and the data is appending upon itself. 
+
+# Myself evaluation: 
+Image of final (assets\weatherapp.PNG)
+
+I got stuck with clearing the field and text box when the button was triggered again. I don't think it was placed within the correct function and was managing to break everything. All of that said..8 weeks ago I hadn't been in the terminal of a computer since I was 15. I am rather pleased with myself that I stared with a blank files and got this far by reviewing previous lessons and code etc. and had a helping hand here and there from other students and the teaching staff. I am looking forward to looking this over with my tutor as well as reiewing the solved so that I can continue on my web development journey!
+
