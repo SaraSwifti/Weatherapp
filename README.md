@@ -55,4 +55,9 @@ Criteria not met: local stored data can not be retrived again and the data is ap
 Image of final (assets\weatherapp.PNG)
 
 I got stuck with clearing the field and text box when the button was triggered again. I don't think it was placed within the correct function and was managing to break everything. All of that said..8 weeks ago I hadn't been in the terminal of a computer since I was 15. I am rather pleased with myself that I stared with a blank files and got this far by reviewing previous lessons and code etc. and had a helping hand here and there from other students and the teaching staff. I am looking forward to looking this over with my tutor as well as reiewing the solved so that I can continue on my web development journey!
+# git hub references and pages:
+repository: https://github.com/SaraSwifti/Weatherapp
+launched github pages: https://saraswifti.github.io/Weatherapp/
 
+
+When I launch my code from the default brower, it is looking and functioning as expected. When I launch the exact same pages from github, it is missing it's styling and functinality. Again, i will be looking this over with my tutor to see what is happening. 
